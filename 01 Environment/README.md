@@ -45,8 +45,9 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Visit the official **Java SE Development Kit (JDK)** page.
 2. Scroll to the **Windows section**.
-3. Click **x64 MSI Installer**.
-4. Save the installer to your **Downloads** folder.
+3. <img width="1353" height="509" alt="image" src="https://github.com/user-attachments/assets/f7598847-54ea-484a-99ab-0f6056c77cd7" />
+4. Click **x64 MSI Installer**.
+5. Save the installer to your **Downloads** folder.
 
 ---
 
@@ -54,9 +55,12 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Run the installer.
 2. Leave the **default installation path**.
-3. Click **Next**.
-4. Wait until the installation completes.
-5. Click **Close**.
+3. <img width="504" height="383" alt="image" src="https://github.com/user-attachments/assets/ff40423a-2d60-4f7a-a5fb-9d7d67c4bdaf" />
+4. Click **Next**.
+<img width="397" height="152" alt="image" src="https://github.com/user-attachments/assets/7f2025ea-eda9-4643-b8bf-b6b0b1bd7f6c" />
+<img width="501" height="381" alt="image" src="https://github.com/user-attachments/assets/4c0b49e3-bf01-4518-9386-b61945c48e90" />
+5. Wait until the installation completes.
+6. Click **Close**.
 
 ---
 
@@ -168,6 +172,8 @@ C:\Python27x64\Scripts
 
 1. Visit the official **Notepad++ website**.
 2. Download the latest **64-bit installer**.
+<img width="1488" height="556" alt="image" src="https://github.com/user-attachments/assets/4dc78267-892e-44bc-98d7-cab0eb68601d" />
+
 
 ---
 
@@ -175,7 +181,12 @@ C:\Python27x64\Scripts
 
 1. Run the installer.
 2. Select language.
+<img width="501" height="386" alt="image" src="https://github.com/user-attachments/assets/7d92aaad-71e1-4ce6-b4b6-52840a4c2ff5" />
+<img width="500" height="391" alt="image" src="https://github.com/user-attachments/assets/8fba3365-2c48-428c-98b1-30829b703fa5" />
+
 3. Follow the default installation steps.
+<img width="500" height="389" alt="image" src="https://github.com/user-attachments/assets/c556e955-4291-4f37-9923-7bc2f45bbfa2" />
+<img width="499" height="389" alt="image" src="https://github.com/user-attachments/assets/ba454510-8ad3-4f88-a860-e98cbb090865" />
 
 ---
 
@@ -212,18 +223,28 @@ C:\Python27x64\Scripts
 1. Visit **JetBrains PyCharm** website.
 2. Download **PyCharm Community for Windows**.
 
+<img width="1370" height="567" alt="image" src="https://github.com/user-attachments/assets/9eb98fbe-6e13-4441-a542-59d7d482827d" />
+
 ---
 
 ## Install PyCharm Community
 
 1. Run installer.
+<img width="503" height="391" alt="image" src="https://github.com/user-attachments/assets/77c28f08-181e-479f-91ff-1a728a78e68c" />
+
 2. Keep default path.
+<img width="496" height="388" alt="image" src="https://github.com/user-attachments/assets/e7983eda-819b-4609-90ce-747feb413b14" />
+<img width="497" height="388" alt="image" src="https://github.com/user-attachments/assets/200798c3-528f-49c4-884e-54a49e6c0e8e" />
+
+
 3. Enable:
 
 * **Add Open Folder as Project**
 * **Add bin folder to PATH**
+<img width="498" height="391" alt="image" src="https://github.com/user-attachments/assets/2d317730-242d-47be-82b1-b59b5ef94307" />
 
 4. Install and finish.
+<img width="498" height="390" alt="image" src="https://github.com/user-attachments/assets/538f1820-7101-4bd9-9cb8-40629b073742" />
 
 ---
 
@@ -266,22 +287,6 @@ Add:
 ```
 C:\Python27
 ```
-
----
-
-## Download x64dbg
-
-1. Visit the **x64dbg download page**.
-2. Download the latest snapshot from **SourceForge**.
-3. Extract the ZIP.
-
----
-
-## Install WinDbg Preview
-
-1. Open **Microsoft Store**.
-2. Search for **WinDbg Preview**.
-3. Click **Install**.
 
 ---
 
