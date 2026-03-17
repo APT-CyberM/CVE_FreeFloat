@@ -18,7 +18,7 @@ The guide walks through each phase of exploit development, from understanding th
 * [Step 6: Generate Shellcode](#step-6-generate-shellcode)
 * [Step 7: Exploit Vulnerability (RCE / PrivEsc)](#step-7-exploit-vulnerability)
 
-----
+---
 
 # 🧭 Step 0: Understanding the Target
 
