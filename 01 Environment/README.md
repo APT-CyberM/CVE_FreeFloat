@@ -41,23 +41,6 @@ However, after repeating the same setup several times, it becomes far more effic
 
 ---
 
-## Download Windows SDK
-
-1. Visit the official **Windows SDK** download page.
-2. Click **Download the installer**.
-3. Save it to your **Downloads** folder.
-
----
-
-## Install Windows SDK
-
-1. Run `winsdksetup.exe`.
-2. Leave the **default installation path**.
-3. Click **Install**.
-4. When finished click **Close**.
-
----
-
 ## Download Java JDK
 
 1. Visit the official **Java SE Development Kit (JDK)** page.
@@ -82,6 +65,8 @@ However, after repeating the same setup several times, it becomes far more effic
 1. Visit the official **Nmap download page**.
 2. Under **Microsoft Windows binaries**, download the latest installer.
 3. Save it to your **Downloads** folder.
+<img width="951" height="300" alt="image" src="https://github.com/user-attachments/assets/a2bb8a02-477a-450e-b88c-7072eaf1b70f" />
+
 
 ---
 
@@ -89,8 +74,13 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Run the **Nmap installer**.
 2. Leave the default options selected.
-3. Ensure **Ncat** remains checked.
-4. Continue clicking **Next** until installation finishes.
+<img width="501" height="386" alt="image" src="https://github.com/user-attachments/assets/08947201-6055-42c1-9b03-1643ae8865ee" />
+
+4. Ensure **Ncat** remains checked.
+<img width="500" height="392" alt="image" src="https://github.com/user-attachments/assets/fe674328-b954-4df6-982c-1ed25d36b7f5" />
+
+5. Continue clicking **Next** until installation finishes.
+<img width="499" height="391" alt="image" src="https://github.com/user-attachments/assets/cfb48a42-458c-4b9c-b299-d1b9b52f5372" />
 
 ---
 
@@ -99,6 +89,10 @@ However, after repeating the same setup several times, it becomes far more effic
 1. Go to the official **Python downloads page**.
 2. Under **Latest Python 3 Release**, download **Windows installer (64-bit)**.
 3. Save it to your **Downloads** folder.
+<img width="1491" height="603" alt="image" src="https://github.com/user-attachments/assets/0a523d6f-cb64-40fa-9563-0b9fe2425e32" />
+<img width="246" height="29" alt="image" src="https://github.com/user-attachments/assets/4d7c12d0-68da-4a02-89b8-61f5757a4c0e" />
+
+
 
 ---
 
@@ -106,39 +100,13 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Run the installer.
 2. Check **Add Python to PATH**.
+<img width="653" height="416" alt="image" src="https://github.com/user-attachments/assets/a5db5aa4-0412-4627-b3c0-391ba388090c" />
+
 3. Click **Install Now**.
-4. At the end select **Disable path length limit**.
-5. Click **Close**.
+<img width="654" height="413" alt="image" src="https://github.com/user-attachments/assets/7c4e4005-59fb-4047-aaaf-3bf1fb6ba494" />
 
----
-
-## Create a Python Virtual Environment
-
-Instead of installing Python packages globally, create a dedicated virtual environment.
-
-Open **PowerShell or CMD**:
-
-```bash
-python -m venv VenvExploiting
-```
-
----
-
-## Install Python Libraries
-
-Activate the environment and install commonly used libraries.
-
-```bash
-# Activate environment
-VenvExploiting\Scripts\Activate.ps1
-
-# Install tools
-pip install capstone filebytes keystone-engine ropper flawfinder
-
-# Leave environment
-deactivate
-```
-
+4. Click **Close**.
+   
 ---
 
 ## Download Python 2 x64
@@ -153,15 +121,20 @@ deactivate
 ## Install Python 2 x64
 
 1. Run the installer.
-2. Set installation directory to:
+<img width="316" height="272" alt="image" src="https://github.com/user-attachments/assets/dffc00f9-d16a-49e5-9c7a-c8721f34e316" />
 
+2. Set installation directory to:
+   
+<img width="295" height="251" alt="image" src="https://github.com/user-attachments/assets/969f8018-b90c-4cd2-924c-c3dc3e61a88f" />
 ```
 C:\Python27x64
 ```
-
 3. Leave other options as default.
+<img width="225" height="195" alt="image" src="https://github.com/user-attachments/assets/48730866-5484-4d8b-aff1-ca910744cb4c" />
+<img width="256" height="220" alt="image" src="https://github.com/user-attachments/assets/4883efe9-6700-4b25-b2b7-2aa6800932d9" />
 
 ---
+
 
 ## Add Python 2 x64 to Environment Variables
 
@@ -210,6 +183,8 @@ C:\Python27x64\Scripts
 
 1. Visit the **Visual Studio Code** page.
 2. Download **System Installer (64-bit)**.
+ <img width="1255" height="615" alt="image" src="https://github.com/user-attachments/assets/2b468f5e-f1d0-47b9-9154-d20bede8a266" />
+
 
 ---
 
@@ -217,13 +192,18 @@ C:\Python27x64\Scripts
 
 1. Run the installer.
 2. Accept license.
-3. Enable these options:
+<img width="597" height="468" alt="image" src="https://github.com/user-attachments/assets/15c32ac2-e5f2-47db-9871-1162a4a74a6a" />
+
+4. Enable these options:
 
 * Add **Open with Code** to context menu
 * Register Code as editor
 * Add to **PATH**
+* <img width="600" height="472" alt="image" src="https://github.com/user-attachments/assets/a91fb306-5efa-4b99-a895-230a7bc3d6a7" />
+
 
 4. Click **Install → Finish**.
+<img width="601" height="466" alt="image" src="https://github.com/user-attachments/assets/fbb5a42f-4cf4-4c93-b6cb-4afe7ad5cd9f" />
 
 ---
 
@@ -255,6 +235,8 @@ C:\Python27x64\Scripts
 2. Fill any required fields.
 3. Download the installer.
 
+<img width="569" height="228" alt="image" src="https://github.com/user-attachments/assets/0daffac8-b108-4e73-8737-0bdeb58085fc" />
+
 ---
 
 ## Install Immunity Debugger
@@ -263,6 +245,13 @@ C:\Python27x64\Scripts
 2. If prompted, allow installation of **Python 2.7.1**.
 3. Accept the license agreement.
 4. Complete installation.
+
+<img width="307" height="213" alt="image" src="https://github.com/user-attachments/assets/3cb362cd-2bd4-4c9d-be6e-23c4de324399" />
+<img width="299" height="204" alt="image" src="https://github.com/user-attachments/assets/52cc8dc6-fee1-4712-8a07-569cd53c83e5" />
+<img width="299" height="206" alt="image" src="https://github.com/user-attachments/assets/a123b902-bebb-48c7-8376-1941cc6acd5e" />
+
+
+
 
 ---
 
@@ -314,55 +303,24 @@ C:\Python27
 4. Click **Finish**.
 
    <img width="505" height="380" alt="image" src="https://github.com/user-attachments/assets/0624dbbb-8d0b-427e-abba-026d7507dc33" />
+   <img width="499" height="376" alt="image" src="https://github.com/user-attachments/assets/24225a19-1ef1-4b44-9701-c3cbe54d0cf1" />
+   <img width="502" height="378" alt="image" src="https://github.com/user-attachments/assets/974f8bb0-1791-4311-8865-91820eeca12a" />
+   <img width="302" height="333" alt="image" src="https://github.com/user-attachments/assets/674dca96-35ff-407b-a499-06b51485fd8f" />
+   <img width="315" height="293" alt="image" src="https://github.com/user-attachments/assets/7f11e56e-b7ef-43af-81b0-aa5638866b54" />
 
-
----
-
-## Download Binary Ninja
-
-1. Visit **Binary Ninja website**.
-2. Go to **Free Edition**.
-3. Download installer.
-
----
-
-## Install Binary Ninja
-
-1. Run installer.
-2. Choose installation directory.
-3. Finish installation.
 
 ---
 
 ## Download Ghidra
 
 1. Visit the official **Ghidra page**.
+<img width="643" height="379" alt="image" src="https://github.com/user-attachments/assets/40c9cb03-5149-4891-9b11-11e04956a62f" />
 2. Download the latest release.
+
+<img width="643" height="346" alt="image" src="https://github.com/user-attachments/assets/d6fa8cea-8af1-449e-85c7-6ac33a34432c" />
+
 3. Extract the archive.
-
----
-
-## Download Cutter
-
-1. Visit **Cutter official website**.
-2. Download the Windows ZIP package.
-3. Extract it.
-
----
-
-## Download Radare2
-
-1. Visit the **Radare2 GitHub Releases** page.
-2. Download the **Windows x64 blob**.
-3. Extract files.
-
-Add Radare2 to PATH:
-
-```
-sysdm.cpl → Environment Variables → Path → New
-```
-
-Add the folder path.
+<img width="622" height="78" alt="image" src="https://github.com/user-attachments/assets/1e0429be-8db5-4b0d-a7ab-175cdf8da6fd" />
 
 ---
 
@@ -376,17 +334,10 @@ Clone the Corelan repository:
 cd Downloads
 git clone https://github.com/corelan/mona
 ```
+<img width="643" height="379" alt="image" src="https://github.com/user-attachments/assets/75ec32ca-32c6-4993-ba2f-ada2301f8cd1" />
+<img width="535" height="281" alt="image" src="https://github.com/user-attachments/assets/94f70600-f1ab-4a6d-a5ae-da28f49bbf2f" />
 
 ---
-
-## Download Mona x64dbg
-
-Clone the x64dbg mona repository:
-
-```bash
-cd Downloads
-git clone https://github.com/x64dbg/mona
-```
 
 ---
 
@@ -398,6 +349,9 @@ Copy `mona.py` to the **PyCommands** directory.
 cd C:\Users\YOURUSER\Downloads\mona\
 copy mona.py "C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands\"
 ```
+<img width="527" height="374" alt="image" src="https://github.com/user-attachments/assets/1ce87425-ce0a-460d-bccb-b2982fa567fa" />
+
+```
 
 Open **Immunity Debugger as Administrator**.
 
@@ -406,31 +360,29 @@ Configure the working directory:
 ```
 !mona help
 !mona config -set workingfolder C:\mona\%p
+
+<img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/67828c7f-54f1-4b6e-b041-798b27ed19ca" />
+
 ```
 
 ---
+```
 
 # 🧪 Vulnerable Applications
 
-## Download Vulnserver
+## Download FreeFloat ftp server
 
-Download **Vulnserver** from its official repository.
+Download **FreeFloat ftp server**
+```
+<img width="643" height="202" alt="image" src="https://github.com/user-attachments/assets/87984bb9-7611-46d4-88de-56256f0022e2" />
 
 ---
-
-## Run Vulnserver
-
-Extract and run:
-
-```bash
-vulnserver.exe
 ```
 
-Default port:
+## Run FreeFloat ftp server
 
-```
-9999
-```
+<img width="208" height="113" alt="image" src="https://github.com/user-attachments/assets/79dec3c6-5afe-40c3-a903-cfddaf404e75" />
+
 
 This service is commonly used to practice **buffer overflow exploitation and fuzzing techniques**.
 
