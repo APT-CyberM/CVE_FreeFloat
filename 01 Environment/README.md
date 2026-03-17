@@ -313,6 +313,9 @@ C:\Python27
 3. Keep default installation path.
 4. Click **Finish**.
 
+   <img width="505" height="380" alt="image" src="https://github.com/user-attachments/assets/0624dbbb-8d0b-427e-abba-026d7507dc33" />
+
+
 ---
 
 ## Download Binary Ninja
