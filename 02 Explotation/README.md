@@ -9,7 +9,7 @@ The guide walks through each phase of exploit development, from understanding th
 
 # 📚 Table of Contents
 
-* [Step 0: Understanding the Target](#step-0-understanding-the-target)
+* [Step 0: Understanding the Target]
 * [Step 1: Fuzzing the Command](#step-1-fuzzing-the-command)
 * [Step 2: Discover Offset to EIP Register](#step-2-discover-offset-to-eip-register)
 * [Step 3: Control EIP](#step-3-control-eip)
