@@ -1,6 +1,10 @@
 
  # 🐛 CVE-2025-5548 – FreeFloat FTP Server Buffer Overflow
 
+
+ <img width="227" height="180" alt="image" src="https://github.com/user-attachments/assets/ca3a9151-0da4-47f4-9fe2-7f7b8b216916" />
+
+
 This repository demonstrates a **classic stack-based buffer overflow** affecting *FreeFloat FTP Server 1.0*, a legacy Windows application.
 
 The goal is to provide a **clear and practical introduction to vulnerability research**, showing how real-world bugs can be understood and exploited through **binary analysis and reverse engineering**.
