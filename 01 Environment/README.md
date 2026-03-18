@@ -55,9 +55,9 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Visit the official **Java SE Development Kit (JDK)** page.
 2. Scroll to the **Windows section**.<br>
-3. <img width="1353" height="509" alt="image" src="https://github.com/user-attachments/assets/f7598847-54ea-484a-99ab-0f6056c77cd7" /><br>
-4. Click **x64 MSI Installer**.
-5. Save the installer to your **Downloads** folder.
+<img width="1353" height="509" alt="image" src="https://github.com/user-attachments/assets/f7598847-54ea-484a-99ab-0f6056c77cd7" /><br>
+3. Click **x64 MSI Installer**.
+4. Save the installer to your **Downloads** folder.
 
 ---
 
