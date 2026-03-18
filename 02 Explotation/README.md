@@ -93,10 +93,8 @@ If the server crashes while processing long input, it likely indicates a **buffe
 
 <img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" />
 
----
 ```
 ```
----
 
 # 🧭 Step 2: Discover Offset to EIP Register
 
