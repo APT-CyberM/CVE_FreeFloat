@@ -217,7 +217,7 @@ C:\Python27x64<br>
 
 ## Install PyCharm Community
 
-1. Run installer.
+1. Run installer.<br>
 <img width="503" height="391" alt="image" src="https://github.com/user-attachments/assets/77c28f08-181e-479f-91ff-1a728a78e68c" /><br>
 
 2. Keep default path.<br>
