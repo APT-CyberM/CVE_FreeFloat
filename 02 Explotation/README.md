@@ -91,7 +91,7 @@ If the server crashes while processing long input, it likely indicates a **buffe
 
 <img width="373" height="365" alt="image" src="https://github.com/user-attachments/assets/c8cb42ad-c8dd-42c1-929d-23a627c1e484" /><br>
 
-<img width="1336" height="141" alt="image" src="https://github.com/user-attachments/assets/d3890640-bd0e-4412-a0df-7248e11076ee" /><br>
+<img width="1092" height="756" alt="image" src="https://github.com/user-attachments/assets/fd8c7d69-08ba-4384-80d9-17da137f96ea" /><br>
 
 <img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" /><br>
 
