@@ -26,7 +26,6 @@ Before beginning exploitation, it is important to understand **how the server pr
 
 **FreeFloat FTP Server** is a legacy FTP service that listens on **TCP port 21** and processes commands through an internal **command dispatcher**. Because the software was written without modern security protections, several handlers rely on unsafe functions such as `strcpy`, which can lead to **stack buffer overflows**.
 
-In this CVE, the vulnerable command is **NOOP**, which can trigger a classic buffer overflow.
 
 ## 💻 Notes
 
@@ -41,7 +40,9 @@ Follow function calls -> Look for strcpy
 ```
 
 ---
+We begin by analyzing where the vulnerable function. For that:
 
+Start IDA and analize the strings:
 
 <img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/7a13b891-8354-4b7e-9687-7e77ef510767" /> <br>
 
