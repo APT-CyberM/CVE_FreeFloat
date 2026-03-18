@@ -42,22 +42,23 @@ Follow function calls -> Look for strcpy
 
 ---
 
-📸 <img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/7a13b891-8354-4b7e-9687-7e77ef510767" />
+📸 
+<img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/7a13b891-8354-4b7e-9687-7e77ef510767" />
+
 <img width="643" height="511" alt="image" src="https://github.com/user-attachments/assets/fb822e46-8ed1-4296-a382-92504c8418f9" />
+
 <img width="643" height="321" alt="image" src="https://github.com/user-attachments/assets/9b8f1ad6-b5db-4baf-a27b-e74aad50f1a7" />
+
 <img width="643" height="105" alt="image" src="https://github.com/user-attachments/assets/0729f2e6-28e8-4039-b92f-37497fe9e377" />
+
 <img width="643" height="319" alt="image" src="https://github.com/user-attachments/assets/f20ac6d0-3ed2-408d-a4a0-a74a10cc9f1d" />
+
 <img width="643" height="303" alt="image" src="https://github.com/user-attachments/assets/f7d384b0-2dce-498d-8aaa-b83d2da8bf8e" />
 
-Vamos a buscar la función vulnerable, para ello vamos a view/ open subviews y elegimos la opción strings
+# Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option:
  <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" />
-
-
-
 ```
-[ espacio para capturas de pantalla del ejercicio ]
 ```
-
 ---
 
 # 🧭 Step 1: Fuzzing the Command
