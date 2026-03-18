@@ -59,6 +59,11 @@ Start IDA and analize the strings:
  Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option:
  
  <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" />
+ <img width="643" height="574" alt="image" src="https://github.com/user-attachments/assets/ecab1f1c-19a3-4be2-ae97-f78f5e98255c" />
+ 
+<img width="643" height="309" alt="image" src="https://github.com/user-attachments/assets/f57d123a-d024-498d-b663-71dc51609b91" />
+
+<img width="408" height="366" alt="image" src="https://github.com/user-attachments/assets/a3a6bcb6-39ff-44d9-9458-3ef582533404" />
  
 ```
 ```
@@ -80,9 +85,7 @@ If the server crashes while processing long input, it likely indicates a **buffe
 * Send the `NOOP` command with a large payload
 * Gradually increase the payload size
   
-<img width="643" height="574" alt="image" src="https://github.com/user-attachments/assets/ecab1f1c-19a3-4be2-ae97-f78f5e98255c" />
-<img width="643" height="309" alt="image" src="https://github.com/user-attachments/assets/f57d123a-d024-498d-b663-71dc51609b91" />
-<img width="408" height="366" alt="image" src="https://github.com/user-attachments/assets/a3a6bcb6-39ff-44d9-9458-3ef582533404" />
+
 <img width="373" height="365" alt="image" src="https://github.com/user-attachments/assets/c8cb42ad-c8dd-42c1-929d-23a627c1e484" />
 <img width="643" height="401" alt="image" src="https://github.com/user-attachments/assets/2e9c917d-fcbb-4205-9cbe-ec4d3f58ed55" />
 <img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" />
