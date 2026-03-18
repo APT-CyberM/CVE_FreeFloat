@@ -42,7 +42,17 @@ Follow function calls -> Look for strcpy
 
 ---
 
-📸 **Space for exercise screenshots**
+📸 <img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/7a13b891-8354-4b7e-9687-7e77ef510767" />
+<img width="643" height="511" alt="image" src="https://github.com/user-attachments/assets/fb822e46-8ed1-4296-a382-92504c8418f9" />
+<img width="643" height="321" alt="image" src="https://github.com/user-attachments/assets/9b8f1ad6-b5db-4baf-a27b-e74aad50f1a7" />
+<img width="643" height="105" alt="image" src="https://github.com/user-attachments/assets/0729f2e6-28e8-4039-b92f-37497fe9e377" />
+<img width="643" height="319" alt="image" src="https://github.com/user-attachments/assets/f20ac6d0-3ed2-408d-a4a0-a74a10cc9f1d" />
+<img width="643" height="303" alt="image" src="https://github.com/user-attachments/assets/f7d384b0-2dce-498d-8aaa-b83d2da8bf8e" />
+
+Vamos a buscar la función vulnerable, para ello vamos a view/ open subviews y elegimos la opción strings
+ <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" />
+
+
 
 ```
 [ espacio para capturas de pantalla del ejercicio ]
@@ -65,6 +75,13 @@ If the server crashes while processing long input, it likely indicates a **buffe
 * Authenticate with `USER` / `PASS`
 * Send the `NOOP` command with a large payload
 * Gradually increase the payload size
+  
+<img width="643" height="574" alt="image" src="https://github.com/user-attachments/assets/ecab1f1c-19a3-4be2-ae97-f78f5e98255c" />
+<img width="643" height="309" alt="image" src="https://github.com/user-attachments/assets/f57d123a-d024-498d-b663-71dc51609b91" />
+<img width="408" height="366" alt="image" src="https://github.com/user-attachments/assets/a3a6bcb6-39ff-44d9-9458-3ef582533404" />
+<img width="373" height="365" alt="image" src="https://github.com/user-attachments/assets/c8cb42ad-c8dd-42c1-929d-23a627c1e484" />
+<img width="643" height="401" alt="image" src="https://github.com/user-attachments/assets/2e9c917d-fcbb-4205-9cbe-ec4d3f58ed55" />
+<img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" />
 
 ---
 
@@ -84,34 +101,38 @@ The **EIP (Instruction Pointer)** controls the program execution flow. If we ove
 
 Instead of sending `"AAAA..."`, we send a **cyclic pattern**. When the crash occurs, the value found in EIP reveals the exact **offset** where the overwrite happens.
 
+<img width="643" height="163" alt="image" src="https://github.com/user-attachments/assets/eb5c43a3-cc82-49b0-bb7d-17cd0a0ad8f3" />
+<img width="643" height="306" alt="image" src="https://github.com/user-attachments/assets/3d1544b5-bf77-4d16-98b5-92348d51e641" />
+
+
 ## 💻 Notes
 
 Generate cyclic pattern:
 
+Creamos una carpeta en C: que se llame Mona y asignamos en Immunity
+<img width="643" height="301" alt="image" src="https://github.com/user-attachments/assets/b47847fe-7ca9-4000-8832-ab8149c57df8" />
+<img width="643" height="355" alt="image" src="https://github.com/user-attachments/assets/dff7baee-37b5-4330-b16d-2b9cd76ea51a" />
+
+```
 ```
 (Windows)
-!mona pattern_create 100
-
-(Ubuntu)
-/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 100
-```
-
-Python alternative:
-
-```
-python3 -c "length=100; import itertools; print(''.join([a+b+c for a,b,c in itertools.product('ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz','0123456789')])[:length])"
-```
-
 Generate larger pattern:
 
 ```
 !mona pattern_create 400
 ```
+<img width="643" height="207" alt="image" src="https://github.com/user-attachments/assets/fc92a2f2-0a7d-4476-b908-93cffd101f17" />
+<img width="643" height="60" alt="image" src="https://github.com/user-attachments/assets/cb0bfa5f-4f12-4266-8468-dca6a1d64796" />
 
 Calculate offset:
+<img width="583" height="175" alt="image" src="https://github.com/user-attachments/assets/b61c7a2c-6c4c-491f-aeaf-d2aecc9914d2" />
+<img width="592" height="201" alt="image" src="https://github.com/user-attachments/assets/e8a41612-2acc-4730-98f7-64e014cde607" />
 
 ```
 !mona pattern_offset 41326941
+```
+<img width="643" height="130" alt="image" src="https://github.com/user-attachments/assets/6f3d4087-bdda-4e54-b9ef-726102fa1455" />
+
 !mona findmsp
 ```
 
@@ -135,10 +156,10 @@ Output:
 
 ---
 
-📸 **Space for exercise screenshots**
+
 
 ```
-[ espacio para capturas de pantalla del ejercicio ]
+
 ```
 
 ---
@@ -162,8 +183,13 @@ Example payload:
 ```
 "A" * 246 + "BBBB"
 ```
+```
+<img width="565" height="252" alt="image" src="https://github.com/user-attachments/assets/ef4c6f1b-a818-4937-bd44-0bbfcb7e6405" />
 
 If the exploit works, **EIP will contain 0x42424242**.
+
+<img width="643" height="285" alt="image" src="https://github.com/user-attachments/assets/7c0d1f49-5cc4-4eff-bd5d-89a8ed39d805" />
+Con este registro vemos lo que apunta a la siguiente instruccion que la CPU tiene que ejecutar antes de hacer un return.
 
 ---
 
@@ -190,6 +216,10 @@ These characters must be removed from the final shellcode.
 ## 💻 Notes
 
 Common bad characters:
+Revisamos que manualmente al ejecutar el script, vemos que después de las BBBB, en lugar de empezar por 01 la secuencia, comienza con un 27, lo cual ahí vemos un bad carácter.
+<img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/db1b1390-c4ac-4b7d-bbc8-5347f68f9442" />
+<img width="643" height="266" alt="image" src="https://github.com/user-attachments/assets/c372eda9-f7d7-487d-82d4-792045a57dad" />
+
 
 ```
 \x00  (Null byte)
@@ -198,19 +228,12 @@ Common bad characters:
 \xFF
 ```
 
+Esto seria un ejemplo de una búsqueda manual. Pero para evitar hacer esto manualmente eliminando los bad caracters del código utilizaremos Mona de nuevo, que nos lo va a hacer de una forma automática sin tener que ir uno a uno manualmente. Para ello:
+
+Ejecutamos el comando mona bytearray y nos va a crear el fichero con todos los posibles bad characters en la ruta previamente creada para mona, que seria lo que necesitaríamos para comenzar a identificarlos. Pero ya lo tenemos en el script. 
+
+
 Generate byte array:
-
-Python:
-
-```
-for i in range(0,256): print('\\x%02X' % i, end='')
-```
-
-Bash:
-
-```
-for i in {0..255}; do printf "\\\x%02x" $i;done
-```
 
 Using Mona:
 
@@ -219,12 +242,16 @@ mkdir C:\Mona
 !mona config -set workingfolder C:\Mona
 !mona bytearray
 ```
+<img width="643" height="154" alt="image" src="https://github.com/user-attachments/assets/2866a2db-9278-4ace-9187-71d0f0f6910a" />
+<img width="643" height="164" alt="image" src="https://github.com/user-attachments/assets/b8bdce5a-3742-4c91-8b6a-f7913ebb3197" />
 
 Compare memory:
 
 ```
 !mona compare -f C:\Mona\bytearray.bin -a ESP_ADDRESS
 ```
+<img width="643" height="382" alt="image" src="https://github.com/user-attachments/assets/37def3bb-9690-4704-a046-a12101fed120" />
+<img width="643" height="336" alt="image" src="https://github.com/user-attachments/assets/509c6a03-1d39-4a84-835d-4f461699d3e9" />
 
 Remove bad characters iteratively:
 
