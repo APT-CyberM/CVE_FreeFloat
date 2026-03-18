@@ -40,7 +40,7 @@ Follow function calls -> Look for strcpy
 ```
 
 ---
-We begin by analyzing where the vulnerable function. For that:
+We begin by analyzing where the vulnerable function and the execution of FTP server. For that:
 
 Start IDA and analize the strings:
 
