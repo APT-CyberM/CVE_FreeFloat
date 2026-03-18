@@ -106,6 +106,8 @@ The **EIP (Instruction Pointer)** controls the program execution flow. If we ove
 
 Instead of sending `"AAAA..."`, we send a **cyclic pattern**. When the crash occurs, the value found in EIP reveals the exact **offset** where the overwrite happens.
 
+Here we are going to send a command plus a buffer, which in this case are 100 AAA, 200...
+
 <img width="643" height="163" alt="image" src="https://github.com/user-attachments/assets/eb5c43a3-cc82-49b0-bb7d-17cd0a0ad8f3" /><br>
 
 <img width="643" height="306" alt="image" src="https://github.com/user-attachments/assets/3d1544b5-bf77-4d16-98b5-92348d51e641" /><br>
@@ -121,10 +123,9 @@ We create a folder in C: called Mona and assign it in Immunity:
 
 <img width="643" height="355" alt="image" src="https://github.com/user-attachments/assets/dff7baee-37b5-4330-b16d-2b9cd76ea51a" /><br>
 ```
-```
 (Windows)
 Generate larger pattern:
-
+```
 ```
 !mona pattern_create 400
 ```
@@ -327,6 +328,8 @@ Search ROP gadgets:
 ```
 !mona rop -cpb "\x00\x0a\x0d"
 ```
+With this, we have managed to overwrite the EIP with the image address:<br>
+
 <img width="643" height="269" alt="image" src="https://github.com/user-attachments/assets/0aa3e17a-fa86-4e18-8c49-e3735eb7a7ba" /><br>
 
 ```
