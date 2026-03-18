@@ -154,33 +154,6 @@ C:\Python27x64
 
 ---
 
-
-## Add Python 2 x64 to Environment Variables
-
-1. Press **Win + R**
-2. Run:
-
-```
-sysdm.cpl
-```
-
-3. Navigate to:
-
-```
-Advanced → Environment Variables
-```
-
-4. Under **User variables → Path → New**
-
-Add:
-
-```
-C:\Python27x64
-C:\Python27x64\Scripts
-```
-
----
-
 # 💻 Development Environments
 
 ## Download Notepad++
@@ -287,30 +260,19 @@ C:\Python27x64\Scripts
 <img width="299" height="206" alt="image" src="https://github.com/user-attachments/assets/a123b902-bebb-48c7-8376-1941cc6acd5e" />
 
 
-
-
----
-
-## Add Python 2 x32 to Environment Variables
-
-1. Search **Environment Variables**.
-2. Open **Edit system environment variables**.
-3. Under **User variables → Path → Edit → New**
-
-Add:
-
-```
-C:\Python27
-```
-
----
-
 # 🔍 Disassemblers & Decompilers
 
 ## Download IDA Free
 
 1. Visit the **IDA Free download page**.
+<img width="1765" height="887" alt="image" src="https://github.com/user-attachments/assets/fb8e60de-dc38-427f-89de-2987a9fecfe8" />
+<img width="497" height="517" alt="image" src="https://github.com/user-attachments/assets/771a7e66-3689-485c-a5d2-50a92d362f73" />
+<img width="1900" height="744" alt="image" src="https://github.com/user-attachments/assets/79be3fa1-8b6e-4a91-a6b4-40b6597f27d0" />
+<img width="1593" height="97" alt="image" src="https://github.com/user-attachments/assets/4c185444-b9e6-4b4a-966b-40958064f7de" />
+
 2. Select Windows version.
+<img width="1873" height="566" alt="image" src="https://github.com/user-attachments/assets/9318d8d3-adab-4534-878a-d557319cd5eb" />
+
 3. Download installer.
 
 ---
@@ -384,12 +346,13 @@ Configure the working directory:
 <img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/67828c7f-54f1-4b6e-b041-798b27ed19ca" />
 
 ```
-
+```
 ---
 ```
-
+```
 # 🧪 Vulnerable Applications
-
+```
+```
 ## Download FreeFloat ftp server
 
 Download **FreeFloat ftp server**
