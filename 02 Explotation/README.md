@@ -45,6 +45,7 @@ Follow function calls -> Look for strcpy
 
 <img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/7a13b891-8354-4b7e-9687-7e77ef510767" />
 
+
 <img width="643" height="511" alt="image" src="https://github.com/user-attachments/assets/fb822e46-8ed1-4296-a382-92504c8418f9" />
 
 <img width="643" height="321" alt="image" src="https://github.com/user-attachments/assets/9b8f1ad6-b5db-4baf-a27b-e74aad50f1a7" />
