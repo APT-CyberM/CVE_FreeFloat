@@ -356,12 +356,12 @@ Configure the working directory:
 ## Download FreeFloat ftp server
 
 Download **FreeFloat ftp server**
-```
+
 <img width="643" height="202" alt="image" src="https://github.com/user-attachments/assets/87984bb9-7611-46d4-88de-56256f0022e2" />
 
 ---
 ```
-
+```
 ## Run FreeFloat ftp server
 
 <img width="208" height="113" alt="image" src="https://github.com/user-attachments/assets/79dec3c6-5afe-40c3-a903-cfddaf404e75" />
