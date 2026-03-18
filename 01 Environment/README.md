@@ -144,12 +144,11 @@ However, after repeating the same setup several times, it becomes far more effic
 ```
 C:\Python27x64
 ```
- 
 <img width="295" height="251" alt="image" src="https://github.com/user-attachments/assets/969f8018-b90c-4cd2-924c-c3dc3e61a88f" />
 
 ---
 3. Leave other options as default.
-
+---
 <img width="225" height="195" alt="image" src="https://github.com/user-attachments/assets/48730866-5484-4d8b-aff1-ca910744cb4c" />
 <img width="256" height="220" alt="image" src="https://github.com/user-attachments/assets/4883efe9-6700-4b25-b2b7-2aa6800932d9" />
 
