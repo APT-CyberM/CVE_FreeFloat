@@ -254,14 +254,16 @@ Compare memory:
 <img width="643" height="336" alt="image" src="https://github.com/user-attachments/assets/509c6a03-1d39-4a84-835d-4f461699d3e9" />
 
 Remove bad characters iteratively:
-
+Hariamos el mismo proceso tantas veces como sea necesario hasta que al ejecutar el script, con los posibles bad caracteres no apareza ningún error en el immunity.  Para ello hay que especificar en el comando de ¡mona bytearray el bad carácter que hemos quitado antes, para que vuelva a generar los bad characters sin el que hemos encontrado previamente:
 ```
 !mona bytearray -b "\x00"
 !mona bytearray -b "\x00\x0a"
 !mona bytearray -b "\x00\x0a\x0d"
 ```
-
+<img width="643" height="140" alt="image" src="https://github.com/user-attachments/assets/b0bbe75a-cd8a-4c2e-b5a9-ace8e067fb06" />
+Con todos los que encontramos hay que añadirlos en el bytearray separado de \. En este caso eran el x00\x0a\x0d
 ---
+<img width="643" height="488" alt="image" src="https://github.com/user-attachments/assets/2e261899-13d8-443d-8795-0713066ba344" />
 
 📸 **Space for exercise screenshots**
 
@@ -302,42 +304,49 @@ Find modules:
 ```
 !mona modules
 ```
+<img width="643" height="308" alt="image" src="https://github.com/user-attachments/assets/67590c1d-0412-41b9-9a03-798dde638dcb" />
 
 Search JMP ESP:
 
 ```
 !mona jmp -r esp -cpb "\x00\x0a\x0d"
 ```
+<img width="643" height="383" alt="image" src="https://github.com/user-attachments/assets/69c3218d-5e06-4247-b4b5-9af078d5361b" />
 
 Search instruction manually:
 
 ```
 !mona asm -s "jmp esp"
 ```
+<img width="643" height="346" alt="image" src="https://github.com/user-attachments/assets/83172a52-04ef-4464-a6ad-98903660c16e" />
 
 Find opcode:
-
+Ya sabemos que esta ejecución del programa tiene un salto ESP, entonces la guardamos para no tenerla que buscar de nuevo
 ```
 !mona find -s "\xff\xe4" -cpb "\x00\x0a\x0d"
 ```
+<img width="643" height="305" alt="image" src="https://github.com/user-attachments/assets/79fc725a-7389-476c-81c9-445ed4e0dc81" />
 
 CALL ESP:
 
 ```
 !mona find -s "\xff\xd4" -cpb "\x00\x0a\x0d"
 ```
+<img width="643" height="305" alt="image" src="https://github.com/user-attachments/assets/9043c6d1-3752-4f4c-9b95-143461609c1f" />
 
 JMP [ESP]:
 
 ```
 !mona find -s "\xff\x24\x24" -cpb "\x00\x0a\x0d"
 ```
+<img width="643" height="75" alt="image" src="https://github.com/user-attachments/assets/d7b70ba7-0cc5-4d0b-89e1-e18c3e6815fd" />
 
 Search ROP gadgets:
 
 ```
 !mona rop -cpb "\x00\x0a\x0d"
 ```
+<img width="643" height="269" alt="image" src="https://github.com/user-attachments/assets/0aa3e17a-fa86-4e18-8c49-e3735eb7a7ba" />
 
 ---
 
@@ -346,6 +355,7 @@ Search ROP gadgets:
 ```
 [ espacio para capturas de pantalla del ejercicio ]
 ```
+<img width="643" height="225" alt="image" src="https://github.com/user-attachments/assets/b00ff090-3efb-4f2b-bc32-9c040e1d56e7" />
 
 ---
 
