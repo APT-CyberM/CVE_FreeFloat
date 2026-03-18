@@ -56,9 +56,9 @@ Start IDA and analize the strings:
 
 <img width="643" height="319" alt="image" src="https://github.com/user-attachments/assets/f20ac6d0-3ed2-408d-a4a0-a74a10cc9f1d" />
 
-<img width="643" height="303" alt="image" src="https://github.com/user-attachments/assets/f7d384b0-2dce-498d-8aaa-b83d2da8bf8e" />
+<img width="643" height="303" alt="image" src="https://github.com/user-attachments/assets/f7d384b0-2dce-498d-8aaa-b83d2da8bf8e" /><br>
 
- Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option:
+ Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option: <br>
  
  <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" />
  
