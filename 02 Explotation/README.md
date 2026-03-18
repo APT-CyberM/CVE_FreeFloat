@@ -48,25 +48,25 @@ Start IDA and analize the strings:
 
 <img width="333" height="382" alt="image" src="https://github.com/user-attachments/assets/7a13b891-8354-4b7e-9687-7e77ef510767" /> <br>
 
-<img width="643" height="511" alt="image" src="https://github.com/user-attachments/assets/fb822e46-8ed1-4296-a382-92504c8418f9" />
+<img width="643" height="511" alt="image" src="https://github.com/user-attachments/assets/fb822e46-8ed1-4296-a382-92504c8418f9" /> <br>
 
-<img width="643" height="321" alt="image" src="https://github.com/user-attachments/assets/9b8f1ad6-b5db-4baf-a27b-e74aad50f1a7" />
+<img width="643" height="321" alt="image" src="https://github.com/user-attachments/assets/9b8f1ad6-b5db-4baf-a27b-e74aad50f1a7" /><br>
 
-<img width="643" height="105" alt="image" src="https://github.com/user-attachments/assets/0729f2e6-28e8-4039-b92f-37497fe9e377" />
+<img width="643" height="105" alt="image" src="https://github.com/user-attachments/assets/0729f2e6-28e8-4039-b92f-37497fe9e377" /><br>
 
-<img width="643" height="319" alt="image" src="https://github.com/user-attachments/assets/f20ac6d0-3ed2-408d-a4a0-a74a10cc9f1d" />
+<img width="643" height="319" alt="image" src="https://github.com/user-attachments/assets/f20ac6d0-3ed2-408d-a4a0-a74a10cc9f1d" /><br>
 
 <img width="643" height="303" alt="image" src="https://github.com/user-attachments/assets/f7d384b0-2dce-498d-8aaa-b83d2da8bf8e" /><br>
 
  Let's look for the vulnerable function, for that we are going to view/ open subviews and choose the strings option: <br>
  
- <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" />
+ <img width="643" height="390" alt="image" src="https://github.com/user-attachments/assets/01067810-c630-43df-b187-65fc737f498d" /><br>
  
- <img width="643" height="574" alt="image" src="https://github.com/user-attachments/assets/ecab1f1c-19a3-4be2-ae97-f78f5e98255c" />
+ <img width="643" height="574" alt="image" src="https://github.com/user-attachments/assets/ecab1f1c-19a3-4be2-ae97-f78f5e98255c" /><br>
  
-<img width="643" height="309" alt="image" src="https://github.com/user-attachments/assets/f57d123a-d024-498d-b663-71dc51609b91" />
+<img width="643" height="309" alt="image" src="https://github.com/user-attachments/assets/f57d123a-d024-498d-b663-71dc51609b91" /><br>
 
-<img width="408" height="366" alt="image" src="https://github.com/user-attachments/assets/a3a6bcb6-39ff-44d9-9458-3ef582533404" />
+<img width="408" height="366" alt="image" src="https://github.com/user-attachments/assets/a3a6bcb6-39ff-44d9-9458-3ef582533404" /><br>
  
 ```
 ```
@@ -89,11 +89,11 @@ If the server crashes while processing long input, it likely indicates a **buffe
 * Gradually increase the payload size
   
 
-<img width="373" height="365" alt="image" src="https://github.com/user-attachments/assets/c8cb42ad-c8dd-42c1-929d-23a627c1e484" />
+<img width="373" height="365" alt="image" src="https://github.com/user-attachments/assets/c8cb42ad-c8dd-42c1-929d-23a627c1e484" /><br>
 
-<img width="1336" height="141" alt="image" src="https://github.com/user-attachments/assets/d3890640-bd0e-4412-a0df-7248e11076ee" />
+<img width="1336" height="141" alt="image" src="https://github.com/user-attachments/assets/d3890640-bd0e-4412-a0df-7248e11076ee" /><br>
 
-<img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" />
+<img width="643" height="335" alt="image" src="https://github.com/user-attachments/assets/122ae761-5584-466c-a312-44dca7715373" /><br>
 
 ```
 ```
@@ -106,9 +106,9 @@ The **EIP (Instruction Pointer)** controls the program execution flow. If we ove
 
 Instead of sending `"AAAA..."`, we send a **cyclic pattern**. When the crash occurs, the value found in EIP reveals the exact **offset** where the overwrite happens.
 
-<img width="643" height="163" alt="image" src="https://github.com/user-attachments/assets/eb5c43a3-cc82-49b0-bb7d-17cd0a0ad8f3" />
+<img width="643" height="163" alt="image" src="https://github.com/user-attachments/assets/eb5c43a3-cc82-49b0-bb7d-17cd0a0ad8f3" /><br>
 
-<img width="643" height="306" alt="image" src="https://github.com/user-attachments/assets/3d1544b5-bf77-4d16-98b5-92348d51e641" />
+<img width="643" height="306" alt="image" src="https://github.com/user-attachments/assets/3d1544b5-bf77-4d16-98b5-92348d51e641" /><br>
 
 
 ## 💻 Notes
@@ -117,9 +117,9 @@ Generate cyclic pattern:
 
 We create a folder in C: called Mona and assign it in Immunity:
 
-<img width="643" height="301" alt="image" src="https://github.com/user-attachments/assets/b47847fe-7ca9-4000-8832-ab8149c57df8" />
+<img width="643" height="301" alt="image" src="https://github.com/user-attachments/assets/b47847fe-7ca9-4000-8832-ab8149c57df8" /><br>
 
-<img width="643" height="355" alt="image" src="https://github.com/user-attachments/assets/dff7baee-37b5-4330-b16d-2b9cd76ea51a" />
+<img width="643" height="355" alt="image" src="https://github.com/user-attachments/assets/dff7baee-37b5-4330-b16d-2b9cd76ea51a" /><br>
 ```
 ```
 (Windows)
@@ -128,21 +128,21 @@ Generate larger pattern:
 ```
 !mona pattern_create 400
 ```
-<img width="643" height="207" alt="image" src="https://github.com/user-attachments/assets/fc92a2f2-0a7d-4476-b908-93cffd101f17" />
+<img width="643" height="207" alt="image" src="https://github.com/user-attachments/assets/fc92a2f2-0a7d-4476-b908-93cffd101f17" /><br>
 
-<img width="643" height="60" alt="image" src="https://github.com/user-attachments/assets/cb0bfa5f-4f12-4266-8468-dca6a1d64796" />
+<img width="643" height="60" alt="image" src="https://github.com/user-attachments/assets/cb0bfa5f-4f12-4266-8468-dca6a1d64796" /><br>
 
 
 Calculate offset:
 
-<img width="583" height="175" alt="image" src="https://github.com/user-attachments/assets/b61c7a2c-6c4c-491f-aeaf-d2aecc9914d2" />
+<img width="583" height="175" alt="image" src="https://github.com/user-attachments/assets/b61c7a2c-6c4c-491f-aeaf-d2aecc9914d2" /><br>
 
-<img width="592" height="201" alt="image" src="https://github.com/user-attachments/assets/e8a41612-2acc-4730-98f7-64e014cde607" />
+<img width="592" height="201" alt="image" src="https://github.com/user-attachments/assets/e8a41612-2acc-4730-98f7-64e014cde607" /><br>
 
 ```
 !mona pattern_offset 41326941
 ```
-<img width="643" height="130" alt="image" src="https://github.com/user-attachments/assets/6f3d4087-bdda-4e54-b9ef-726102fa1455" />
+<img width="643" height="130" alt="image" src="https://github.com/user-attachments/assets/6f3d4087-bdda-4e54-b9ef-726102fa1455" /><br>
 
 ```
 [*] Exact match at offset 246
@@ -171,11 +171,11 @@ Example payload:
 ```
 ```
 ```
-<img width="565" height="252" alt="image" src="https://github.com/user-attachments/assets/ef4c6f1b-a818-4937-bd44-0bbfcb7e6405" />
+<img width="565" height="252" alt="image" src="https://github.com/user-attachments/assets/ef4c6f1b-a818-4937-bd44-0bbfcb7e6405" /><br>
 
 If the exploit works, **EIP will contain 0x42424242**.
 
-<img width="643" height="285" alt="image" src="https://github.com/user-attachments/assets/7c0d1f49-5cc4-4eff-bd5d-89a8ed39d805" />
+<img width="643" height="285" alt="image" src="https://github.com/user-attachments/assets/7c0d1f49-5cc4-4eff-bd5d-89a8ed39d805" /><br>
 
 With this register we see what the next instruction that the CPU has to execute before making a return points to
 
@@ -200,9 +200,9 @@ Common bad characters:
 
 We check manually when running the script, we see that after the BBBB, instead of starting the sequence at 01, it starts with 27, where we see a bad character.
 
-<img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/db1b1390-c4ac-4b7d-bbc8-5347f68f9442" />
+<img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/db1b1390-c4ac-4b7d-bbc8-5347f68f9442" /><br>
 
-<img width="643" height="266" alt="image" src="https://github.com/user-attachments/assets/c372eda9-f7d7-487d-82d4-792045a57dad" />
+<img width="643" height="266" alt="image" src="https://github.com/user-attachments/assets/c372eda9-f7d7-487d-82d4-792045a57dad" /><br>
 
 ```
 \x00  (Null byte)
@@ -224,18 +224,18 @@ mkdir C:\Mona
 !mona config -set workingfolder C:\Mona
 !mona bytearray
 ```
-<img width="643" height="154" alt="image" src="https://github.com/user-attachments/assets/2866a2db-9278-4ace-9187-71d0f0f6910a" />
+<img width="643" height="154" alt="image" src="https://github.com/user-attachments/assets/2866a2db-9278-4ace-9187-71d0f0f6910a" /><br>
 
-<img width="643" height="164" alt="image" src="https://github.com/user-attachments/assets/b8bdce5a-3742-4c91-8b6a-f7913ebb3197" />
+<img width="643" height="164" alt="image" src="https://github.com/user-attachments/assets/b8bdce5a-3742-4c91-8b6a-f7913ebb3197" /><br>
 
 Compare memory:
 
 ```
 !mona compare -f C:\Mona\bytearray.bin -a ESP_ADDRESS
 ```
-<img width="643" height="382" alt="image" src="https://github.com/user-attachments/assets/37def3bb-9690-4704-a046-a12101fed120" />
+<img width="643" height="382" alt="image" src="https://github.com/user-attachments/assets/37def3bb-9690-4704-a046-a12101fed120" /><br>
 
-<img width="643" height="336" alt="image" src="https://github.com/user-attachments/assets/509c6a03-1d39-4a84-835d-4f461699d3e9" />
+<img width="643" height="336" alt="image" src="https://github.com/user-attachments/assets/509c6a03-1d39-4a84-835d-4f461699d3e9" /><br>
 
 Remove bad characters iteratively:
 
@@ -246,12 +246,12 @@ We would perform the same process as many times as necessary until, when running
 !mona bytearray -b "\x00\x0a\x0d"
 ---
 ```
-<img width="643" height="140" alt="image" src="https://github.com/user-attachments/assets/b0bbe75a-cd8a-4c2e-b5a9-ace8e067fb06" />
+<img width="643" height="140" alt="image" src="https://github.com/user-attachments/assets/b0bbe75a-cd8a-4c2e-b5a9-ace8e067fb06" /><br>
 ```
 With all the ones we find, we have to add them in the bytearray separate from . In this case they were the x00x0ax0d
 ```
 ---
-<img width="643" height="488" alt="image" src="https://github.com/user-attachments/assets/2e261899-13d8-443d-8795-0713066ba344" />
+<img width="643" height="488" alt="image" src="https://github.com/user-attachments/assets/2e261899-13d8-443d-8795-0713066ba344" /><br>
 
 ---
 
@@ -286,21 +286,21 @@ Find modules:
 ```
 !mona modules
 ```
-<img width="643" height="308" alt="image" src="https://github.com/user-attachments/assets/67590c1d-0412-41b9-9a03-798dde638dcb" />
+<img width="643" height="308" alt="image" src="https://github.com/user-attachments/assets/67590c1d-0412-41b9-9a03-798dde638dcb" /><br>
 
 Search JMP ESP:
 
 ```
 !mona jmp -r esp -cpb "\x00\x0a\x0d"
 ```
-<img width="643" height="383" alt="image" src="https://github.com/user-attachments/assets/69c3218d-5e06-4247-b4b5-9af078d5361b" />
+<img width="643" height="383" alt="image" src="https://github.com/user-attachments/assets/69c3218d-5e06-4247-b4b5-9af078d5361b" /><br>
 
 Search instruction manually:
 
 ```
 !mona asm -s "jmp esp"
 ```
-<img width="643" height="346" alt="image" src="https://github.com/user-attachments/assets/83172a52-04ef-4464-a6ad-98903660c16e" />
+<img width="643" height="346" alt="image" src="https://github.com/user-attachments/assets/83172a52-04ef-4464-a6ad-98903660c16e" /><br>
 
 Find opcode:
 
@@ -308,32 +308,32 @@ We already know that this program execution has an ESP jump, so we save it so we
 ```
 !mona find -s "\xff\xe4" -cpb "\x00\x0a\x0d"
 ```
-<img width="643" height="305" alt="image" src="https://github.com/user-attachments/assets/79fc725a-7389-476c-81c9-445ed4e0dc81" />
+<img width="643" height="305" alt="image" src="https://github.com/user-attachments/assets/79fc725a-7389-476c-81c9-445ed4e0dc81" /><br>
 
 CALL ESP:
 
 ```
 !mona find -s "\xff\xd4" -cpb "\x00\x0a\x0d"
 ```
-<img width="643" height="305" alt="image" src="https://github.com/user-attachments/assets/9043c6d1-3752-4f4c-9b95-143461609c1f" />
+<img width="643" height="305" alt="image" src="https://github.com/user-attachments/assets/9043c6d1-3752-4f4c-9b95-143461609c1f" /><br>
 
 JMP [ESP]:
 
 ```
 !mona find -s "\xff\x24\x24" -cpb "\x00\x0a\x0d"
 ```
-<img width="643" height="75" alt="image" src="https://github.com/user-attachments/assets/d7b70ba7-0cc5-4d0b-89e1-e18c3e6815fd" />
+<img width="643" height="75" alt="image" src="https://github.com/user-attachments/assets/d7b70ba7-0cc5-4d0b-89e1-e18c3e6815fd" /><br>
 
 Search ROP gadgets:
 
 ```
 !mona rop -cpb "\x00\x0a\x0d"
 ```
-<img width="643" height="269" alt="image" src="https://github.com/user-attachments/assets/0aa3e17a-fa86-4e18-8c49-e3735eb7a7ba" />
+<img width="643" height="269" alt="image" src="https://github.com/user-attachments/assets/0aa3e17a-fa86-4e18-8c49-e3735eb7a7ba" /><br>
 
 ```
 ```
-<img width="643" height="225" alt="image" src="https://github.com/user-attachments/assets/b00ff090-3efb-4f2b-bc32-9c040e1d56e7" />
+<img width="643" height="225" alt="image" src="https://github.com/user-attachments/assets/b00ff090-3efb-4f2b-bc32-9c040e1d56e7" /><br>
 
 ---
 
