@@ -331,9 +331,9 @@ Search ROP gadgets:
 With this, we have managed to overwrite the EIP with the image address:<br>
 
 <img width="643" height="269" alt="image" src="https://github.com/user-attachments/assets/0aa3e17a-fa86-4e18-8c49-e3735eb7a7ba" /><br>
+
 We have overwritten the EIP with that address, a return has been made from the function we are in, it has gone to that memory address, executed the instruction, and jumped to the JMP that we previously located and started executing the noop and the breakpoint:<br>
-```
-```
+
 <img width="643" height="225" alt="image" src="https://github.com/user-attachments/assets/b00ff090-3efb-4f2b-bc32-9c040e1d56e7" /><br>
 
 ---
