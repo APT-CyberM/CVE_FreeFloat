@@ -27,6 +27,8 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Visit the official **Git for Windows** download page.
 2. Click **"Click here to download"** to download the latest version.
+<img width="1213" height="523" alt="image" src="https://github.com/user-attachments/assets/c2b06252-5f0e-455d-8440-741170a54b4b" />
+
 3. Save the installer to your **Downloads** folder.
 
 ---
@@ -35,9 +37,17 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Locate the downloaded installer.
 2. Double-click the file.
+<img width="598" height="465" alt="image" src="https://github.com/user-attachments/assets/65be3e6c-4a0a-473b-99d5-ac553d72b52f" />
 3. Follow the setup wizard using **default options**.
+<img width="599" height="466" alt="image" src="https://github.com/user-attachments/assets/7850c597-f699-4ead-9cb3-7cc43815da0b" />
+<img width="600" height="465" alt="image" src="https://github.com/user-attachments/assets/aa93eeea-215d-4df6-9b97-f83de6e7cb03" />
+<img width="597" height="467" alt="image" src="https://github.com/user-attachments/assets/03329742-2bb7-4a92-a70e-ebf38f68d9d6" />
+
 4. Click **Install**.
+<img width="598" height="465" alt="image" src="https://github.com/user-attachments/assets/3102a20e-c434-4969-be4e-fb3ce238de23" />
+
 5. Check **Launch Git Bash** and click **Finish**.
+<img width="598" height="465" alt="image" src="https://github.com/user-attachments/assets/70db1d2d-1ec8-464e-9281-8135e8edaa20" />
 
 ---
 
@@ -55,12 +65,12 @@ However, after repeating the same setup several times, it becomes far more effic
 
 1. Run the installer.
 2. Leave the **default installation path**.
-3. <img width="504" height="383" alt="image" src="https://github.com/user-attachments/assets/ff40423a-2d60-4f7a-a5fb-9d7d67c4bdaf" />
-4. Click **Next**.
+<img width="504" height="383" alt="image" src="https://github.com/user-attachments/assets/ff40423a-2d60-4f7a-a5fb-9d7d67c4bdaf" />
+3. Click **Next**.
 <img width="397" height="152" alt="image" src="https://github.com/user-attachments/assets/7f2025ea-eda9-4643-b8bf-b6b0b1bd7f6c" />
 <img width="501" height="381" alt="image" src="https://github.com/user-attachments/assets/4c0b49e3-bf01-4518-9386-b61945c48e90" />
-5. Wait until the installation completes.
-6. Click **Close**.
+4. Wait until the installation completes.
+5. Click **Close**.
 
 ---
 
@@ -80,10 +90,10 @@ However, after repeating the same setup several times, it becomes far more effic
 2. Leave the default options selected.
 <img width="501" height="386" alt="image" src="https://github.com/user-attachments/assets/08947201-6055-42c1-9b03-1643ae8865ee" />
 
-4. Ensure **Ncat** remains checked.
+3. Ensure **Ncat** remains checked.
 <img width="500" height="392" alt="image" src="https://github.com/user-attachments/assets/fe674328-b954-4df6-982c-1ed25d36b7f5" />
 
-5. Continue clicking **Next** until installation finishes.
+4. Continue clicking **Next** until installation finishes.
 <img width="499" height="391" alt="image" src="https://github.com/user-attachments/assets/cfb48a42-458c-4b9c-b299-d1b9b52f5372" />
 
 ---
@@ -118,6 +128,8 @@ However, after repeating the same setup several times, it becomes far more effic
 1. Go to the **Python 2.7.11 release page**.
 2. Scroll to **Files**.
 3. Download **Windows x86-64 MSI installer**.
+<img width="1290" height="831" alt="image" src="https://github.com/user-attachments/assets/6b8d1c57-8c56-461a-9788-6c604d4f2558" />
+
 4. Save to **Downloads**.
 
 ---
