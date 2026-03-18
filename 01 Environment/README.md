@@ -36,7 +36,7 @@ However, after repeating the same setup several times, it becomes far more effic
 ## Install Git
 
 1. Locate the downloaded installer.
-2. Double-click the file.
+2. Double-click the file.<br>
 <img width="598" height="465" alt="image" src="https://github.com/user-attachments/assets/65be3e6c-4a0a-473b-99d5-ac553d72b52f" /><br>
 3. Follow the setup wizard using **default options**.<br>
 <img width="599" height="466" alt="image" src="https://github.com/user-attachments/assets/7850c597-f699-4ead-9cb3-7cc43815da0b" /><br>
