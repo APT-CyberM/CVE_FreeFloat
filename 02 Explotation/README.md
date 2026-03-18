@@ -179,8 +179,6 @@ If the exploit works, **EIP will contain 0x42424242**.
 
 With this register we see what the next instruction that the CPU has to execute before making a return points to
 
-```
-```
 
 # 🧭 Step 4: Find Bad Characters
 
